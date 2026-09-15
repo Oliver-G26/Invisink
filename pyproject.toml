@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "invisink"
+version = "0.1.0"
+description = "Invisible ink for plain text - zero-width steganography with AES-GCM"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+keywords = ["steganography", "zero-width", "unicode", "aes-gcm", "cryptography"]
+dependencies = ["pycryptodome>=3.20"]
+
+[project.scripts]
+invisink = "invisink:main"
+
+[tool.setuptools]
+py-modules = ["invisink"]

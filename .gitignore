@@ -1,0 +1,16 @@
+# This repository publishes the tool and its documentation only.
+# Everything else in the working directory stays local: earlier drafts,
+# build output that embeds absolute paths from the build machine, virtual
+# environments and editor noise.
+#
+# The rule is a whitelist — ignore everything, then re-include what ships.
+# Adding a new file to the repository means adding a "!" line for it here.
+
+*
+
+!.gitignore
+!LICENSE
+!README.md
+!invisink.py
+!pyproject.toml
+!requirements.txt
